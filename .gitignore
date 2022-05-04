@@ -103,4 +103,4 @@ typings/
 .tern-port
 
 # Ignore main.js (bundle.js i labb beskrivning)
-dist/main.js 
+dist/bundle.js 
