@@ -101,3 +101,6 @@ typings/
 
 # TernJS port file
 .tern-port
+
+# Ignore main.js (bundle.js i labb beskrivning)
+dist/main.js 
