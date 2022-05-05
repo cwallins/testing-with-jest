@@ -23,6 +23,12 @@ test('The stack should be empty in the beginning', async () => {
 	expect(stack).toEqual("n/a");
 });
 
+// Skapa eget test. Se om det finns en knapp på sidan som heter pop
+test('The page should contain a pop button', async () => {
+    let buttons = await driver.findElement(By.id('knapp'));
+	expect(buttons).toBeDefined();
+});
+
 describe('Clicking "Pusha till stacken"', () => {
 	it('should open a prompt box', async () => {
 		let push = await driver.findElement(By.id('push'));
