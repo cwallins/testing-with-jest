@@ -18,11 +18,14 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBe(42);
 });
 
-// Skapa eget test 
+// Skapa eget unit test
+// Gjort under labbtillfälle med Johan Holmberg, Emil & Mesam.
+// Våra lösningar kommer därmed vara väldigt lika. 
+
 test('pop on stack with two or more element that is being removed', () => {
-    const actual = "Hej"
-    stack.push(actual)
-    expect(stack.peek()).toBe(actual);
-    expect(stack.pop()).toBe(actual);
-    expect(stack.peek()).not.toBe(actual)
+    const actual = "Hej" // Konstant 
+    stack.push(actual)   // Lägg till konstanten på stacken 
+    expect(stack.peek()).toBe(actual); // Ser så översta elementet är konstanten
+    expect(stack.pop()).toBe(actual);  // Ta väck konstanten som är överst om den är "actual"
+    expect(stack.peek()).not.toBe(actual) // Se så att det som blir returnerat inte är konstanten
 });
