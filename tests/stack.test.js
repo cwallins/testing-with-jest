@@ -17,3 +17,12 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+// Skapa eget test 
+test('pop on stack with two or more element that is being removed', () => {
+    const actual = "Hej"
+    stack.push(actual)
+    expect(stack.peek()).toBe(actual);
+    expect(stack.pop()).toBe(actual);
+    expect(stack.peek()).not.toBe(actual)
+});
